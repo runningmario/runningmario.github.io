@@ -54,8 +54,9 @@ position: relative;
 }
 
 .wrapperpage { width: auto; max-width: 620px; margin-left: auto; margin-right: auto;}
+.description-wrapper { width: auto; max-width: 620px; padding: 110px 0; margin-left: auto; margin-right: auto; color: #878787; font-size: 16px;}
 #dino-game { margin: 0; padding: 0 20px;}
-#dino-game h1 { margin: 15px 0 6px; font-size: 18px; text-align: center; font-weight: normal; font-family: "Press Start 2P", system-ui; color: #b8b8b8;}
+#dino-game h1 { margin: 15px 0 6px; font-size: 18px; text-align: center; font-weight: normal; font-family: "Press Start 2P"; color: #b8b8b8;}
 #dino-game p { margin: 0 0 10px; font-size: 15px; line-height: 17px; text-align: center;}
 #offline-resources {display: none;}
 .control {color: #878787;}
@@ -89,6 +90,7 @@ h1 {font-size: 2em;}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), 
 only screen and (min-resolution: 2dppx) { 
 .control { display:none;}
+button { display:none;}
 }
 
 @media (min-height: 240px) and (orientation: landscape) {
