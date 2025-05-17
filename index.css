@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"');
-body {background-color:#212529;}
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"');
+body {background-color:#000000;}
+body:after {
+  --color-scanline: rgba(255,255,255,.075);
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 3;
+  background: repeating-linear-gradient(to bottom, var(--color-scanline), var(--color-scanline) 1px, transparent 1px, transparent 5px);
+}
 
 /* Offline page */
 
@@ -53,7 +67,25 @@ width: 100%;
 position: relative;
 }
 
-.wrapperpage { width: auto; max-width: 620px; margin-left: auto; margin-right: auto;}
+
+h1 {
+  margin: 35px 0 0;
+  font-size: 1.8em;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #525252;
+}
+ul { margin: 0; padding: 0; list-style: none;}
+p { margin: 0 0 10px; font-size: 16px; line-height: 18px; text-align: center;}
+.wrapperpage { width: auto; max-width: 620px; margin-left: auto; margin-right: auto; font-family: "Pixelify Sans", sans-serif; font-weight: 400; font-style: normal; color: #fff;}
+.other-versions { margin-bottom: 30px; text-align: center;}
+.other-versions ul { display: inline-block; margin: 0;}
+.other-versions ul li { float: left; margin: 0 5px; text-align: center;}
+.other-versions ul li img { display: block;}
+.other-versions ul li a { color: #858585; font-size: 12px; font-weight: bold; text-decoration: none;}
 .description-wrapper { width: auto; max-width: 620px; padding: 110px 0; margin-left: auto; margin-right: auto; color: #878787; font-size: 16px;}
 #dino-game { margin: 0; padding: 0 20px;}
 #dino-game h1 { margin: 15px 0 6px; font-size: 18px; text-align: center; font-weight: normal; font-family: "Press Start 2P"; color: #b8b8b8;}
@@ -61,6 +93,9 @@ position: relative;
 #offline-resources {display: none;}
 .control {color: #878787;}
 .description { color: #fdfdfd;}
+#footer { color: #444; margin: 10px; font-size: 12px;}
+.copyright { position: absolute; left: 0; bottom: 0; padding: 15px 0; width: 100%; color: #444; font-family: "Times New Roman", Times, serif; text-align: center;}
+
 
 @media (max-width: 420px) {
 .wrapperpage { padding: 0 5px;}
