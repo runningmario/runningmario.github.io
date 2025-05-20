@@ -89,7 +89,7 @@ p { margin: 0 0 10px; font-size: 16px; line-height: 18px; text-align: center;}
 .description-wrapper { width: auto; max-width: 620px; padding: 110px 0; margin-left: auto; margin-right: auto; color: #878787; font-size: 16px;}
 #dino-game { margin: 0; padding: 0 20px;}
 #dino-game h1 { margin: 15px 0 6px; font-size: 18px; text-align: center; font-weight: normal; font-family: "Press Start 2P"; color: #b8b8b8;}
-#dino-game p { margin: 0 0 10px; font-size: 15px; line-height: 17px; text-align: center;}
+#dino-game p { margin: 0 0 10px; font-size: 14px; line-height: 17px; text-align: center;}
 #offline-resources {display: none;}
 .control {color: #878787;}
 .description { color: #fdfdfd;}
